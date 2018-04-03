@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    background: url("../img/bg/bg.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#top-distance {
+    margin-top: 10%
+}
+
+#searchForm {
+    width: 100%;
+    margin-top: 5%;
+}
+
+#searchText {
+    width: 70%;
+    background-color: transparent;
+    text-align: center;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    border-bottom: 1px solid white;
+}
+
+#timedate {
+    width: 100%;
+    overflow: hidden;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px black;
+}
+
+#date {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+#time {
+    outline: none;
+    overflow: none;
+    font-size: 80px;
+    font-weight: lighter;
+}
+
+.mainIco {
+    display: inline-block;
+    width: 57px;
+    height: 57px;
+    transition: transform 0.2s ease-in-out, box-shadow 1s ease-in-out;
+    box-shadow: 1px 1px 5px black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.mainIco:hover {
+    transition: transform 0.3s ease-in-out, box-shadow 1s ease-in-out;
+    transform: scale(1.2);
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
+}
+
+.ico {
+    margin: 15px 0;
+    margin-left: 1%;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease-in-out, box-shadow 1s ease-in-out;
+    box-shadow: 1px 1px 5px black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.ico:hover {
+    transition: transform 0.3s ease-in-out, box-shadow 1s ease-in-out;
+    transform: scale(1.2);
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
+}
+
+.icoPanel {
+    background-color: rgba(0, 0, 0, 0.5);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    padding: 0 100px;
+}
