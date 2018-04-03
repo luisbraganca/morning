@@ -116,10 +116,10 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     max-height: 0;
     overflow: hidden;
-    transition: 0.4s;
-    -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -o-transition: 0.4s;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
     padding: 0 150px;
 }
 
