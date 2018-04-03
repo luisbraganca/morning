@@ -159,7 +159,7 @@ var main = (function () {
         if (searchEnginesElement.style.maxHeight) {
             searchEnginesElement.style.maxHeight = null;
         } else {
-            searchEnginesElement.style.maxHeight = Math.floor(window.screen.height / 3) + "px";
+            searchEnginesElement.style.maxHeight = "300px";
         }
     };
     var searchEngineHandler = function (engineKey) {
