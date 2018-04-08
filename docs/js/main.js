@@ -214,9 +214,9 @@ var main = (function () {
         localStorage.setItem("morningData", JSON.stringify(toSave));
     };
     var registerServiceWorker = function () {
-        if ('serviceWorker' in navigator) {
+        if ("./js/service-worker.js" in navigator) {
             window.addEventListener('load', function () {
-                navigator.serviceWorker.register('service-worker.js').then(function (registration) {
+                navigator.serviceWorker.register("./js/service-worker.js").then(function (registration) {
                     // Registration was successful
                     console.log(registration);
                 }, function (err) {
