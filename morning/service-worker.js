@@ -45,6 +45,7 @@ self.addEventListener('install', function (event) {
                 ];
                 cache.addAll(urlsToCache);
                 // Cached
+                console.log("Cached");
             })
         }));
     }

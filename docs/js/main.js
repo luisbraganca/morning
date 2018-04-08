@@ -218,11 +218,9 @@ var main = (function () {
             window.addEventListener('load', function () {
                 navigator.serviceWorker.register("./js/service-worker.js").then(function (registration) {
                     // Registration was successful
-                    console.log(registration);
+                    console.log(registration.scope);
                 }, function (err) {
                     // Registration failed
-                    console.log(err);
-                }).catch(function (err) {
                     console.log(err);
                 });
             });
