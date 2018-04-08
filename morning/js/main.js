@@ -213,6 +213,19 @@ var main = (function () {
         toSave.visited = true;
         localStorage.setItem("morningData", JSON.stringify(toSave));
     };
+    var registerServiceWorker = function () {
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('service-worker.js').then(function (registration) {
+                    // Registration was successful
+                }, function (err) {
+                    // Registration failed
+                }).catch(function (err) { });
+            });
+        } else {
+            // Service worker not supported
+        }
+    };
     return function () {
         timeElement = document.getElementById("time");
         dateElement = document.getElementById("date");
@@ -228,8 +241,8 @@ var main = (function () {
         if (isFirstStart) {
             handleFirstStart();
         }
+        registerServiceWorker();
     };
-
 })();
 
 window.onload = main;
