@@ -218,12 +218,17 @@ var main = (function () {
             window.addEventListener('load', function () {
                 navigator.serviceWorker.register('service-worker.js').then(function (registration) {
                     // Registration was successful
+                    console.log(registration);
                 }, function (err) {
                     // Registration failed
-                }).catch(function (err) { });
+                    console.log(err);
+                }).catch(function (err) {
+                    console.log(err);
+                });
             });
         } else {
             // Service worker not supported
+            console.log("Not supported");
         }
     };
     return function () {
