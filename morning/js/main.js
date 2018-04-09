@@ -164,7 +164,7 @@ var main = (function () {
         if (searchEnginesElement.style.maxHeight) {
             searchEnginesElement.style.maxHeight = null;
         } else {
-            searchEnginesElement.style.maxHeight = "300px";
+            searchEnginesElement.style.maxHeight = searchEnginesElement.scrollHeight + "px";
         }
     };
     var searchEngineHandler = function (engineKey) {

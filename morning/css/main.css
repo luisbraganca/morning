@@ -61,7 +61,10 @@ body {
     display: inline-block;
     width: 57px;
     height: 57px;
-    transition: 0.2s;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
     box-shadow: 1px 1px 5px black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -116,10 +119,10 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     max-height: 0;
     overflow: hidden;
-    transition: 0.1s;
-    -webkit-transition: 0.1s;
-    -moz-transition: 0.1s;
-    -o-transition: 0.1s;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
     padding: 0 150px;
 }
 
