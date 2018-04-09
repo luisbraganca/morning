@@ -8,16 +8,16 @@ var main = (function () {
     var toastElement;
     var isFirstStart = !(localStorage.getItem("morningData") && JSON.parse(localStorage.getItem("morningData")).visited);
     var engines = {
+        "dd": {
+            "action": "https://duckduckgo.com",
+            "name": "duckduckgo",
+            "paramName": "q",
+        },
         "gg": {
             "action": "https://www.google.pt/search",
             "name": "google",
             "paramName": "q",
             "track": true
-        },
-        "dd": {
-            "action": "https://duckduckgo.com",
-            "name": "duckduckgo",
-            "paramName": "q",
         },
         "qw": {
             "action": "https://www.qwant.com",
