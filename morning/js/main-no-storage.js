@@ -194,26 +194,7 @@ var main = (function () {
             searchEnginesElement.append(element);
         }
     };
-    var handleFirstStart = function () {
-        var toastContent = "morning, we have Bang! notation support:<br/>"
-        for (var engine in engines) {
-            toastContent += "<br/><span class='alignLeft'>!" + engine + " - Changes to " + engines[engine].name + " search engine</span>";
-        }
-        var options = { type: "neutral", delay: 30000, align: "left", bold: false };
-        toastContent += "<br/><br/>Click me!";
-        showToast(toastContent, options, function () {
-            showToast("Keep in mind that, since we're looking forward to keep this website simple, we're avoiding account management and therefore,\
-            all your notes will be deleted if you (or something) cleans your browser data.<br/><br/>Click me again! (I promise we're almost finished)", options, function () {
-                    showToast("As a way of 'helping us to help you', if you manage to find any vulnerability or bug please take some time to report it on our\
-                GitHub page, on the 'issues' section.<br/>For better usage make sure you add us as your home page.<br/><br/>\
-                Now click me one last time and I'm gone.", options, false);
-                });
-        });
-        var toSave = JSON.parse(localStorage.getItem("morningData")) || {};
-        toSave.visited = true;
-        localStorage.setItem("morningData", JSON.stringify(toSave));
-    };
-    
+
     return function () {
         timeElement = document.getElementById("time");
         dateElement = document.getElementById("date");
@@ -226,9 +207,6 @@ var main = (function () {
         attachSearchEngines();
         refreshDateTime();
         setInterval(refreshDateTime, 1000);
-        if (isFirstStart) {
-            handleFirstStart();
-        }
     };
 })();
 
