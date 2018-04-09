@@ -174,7 +174,7 @@ var main = (function () {
         searchInput.name = engine.paramName;
         searchInput.placeholder = "Search " + engine.name;
         searchEnginesElement.style.maxHeight = null; // Close after search engine is selected
-        if (engine.tracks) {
+        if (engine.track) {
             showToast("Warning: if you're signed in, this search will be tracked by " + engine.name + ".", { bold: true, align: "left", type: "warning" });
         }
         searchInput.focus();
