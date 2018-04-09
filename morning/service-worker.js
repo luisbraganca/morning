@@ -26,7 +26,7 @@
                 "/register-service-worker.js",
                 "/service-worker.js",
                 "/js/service-worker.js",
-                "/img/bg/bg.png",
+                "/img/bg/bg.jpg",
                 "/img/ico/duckduckgo.png",
                 "/img/ico/ebay.png",
                 "/img/ico/facebook.png",
