@@ -12,11 +12,12 @@ var main = (function () {
             "action": "https://www.google.pt/search",
             "name": "google",
             "paramName": "q",
+            "track": true
         },
         "dd": {
             "action": "https://duckduckgo.com",
             "name": "duckduckgo",
-            "paramName": "q"
+            "paramName": "q",
         },
         "qw": {
             "action": "https://www.qwant.com",
@@ -27,11 +28,13 @@ var main = (function () {
             "action": "https://www.facebook.com/search/top",
             "name": "facebook",
             "paramName": "q",
+            "track": true
         },
         "yt": {
             "action": "https://www.youtube.com/results",
             "name": "youtube",
-            "paramName": "search_query"
+            "paramName": "search_query",
+            "track": true
         },
         "wp": {
             "action": "https://wikipedia.org/wiki/Special:Search",
@@ -46,7 +49,8 @@ var main = (function () {
         "eb": {
             "action": "https://www.ebay.com/sch/i.html",
             "name": "ebay",
-            "paramName": "_nkw"
+            "paramName": "_nkw",
+            "track": true
         },
         "sc": {
             "action": "https://soundcloud.com/search",
@@ -66,7 +70,8 @@ var main = (function () {
         "li": {
             "action": "https://www.linkedin.com/search/results/index",
             "name": "linkedin",
-            "paramName": "keywords"
+            "paramName": "keywords",
+            "track": true
         }
     };
     var refreshDateTime = (function () {
@@ -169,6 +174,9 @@ var main = (function () {
         searchInput.name = engine.paramName;
         searchInput.placeholder = "Search " + engine.name;
         searchEnginesElement.style.maxHeight = null; // Close after search engine is selected
+        if (engine.tracks) {
+            showToast("Warning: if you're signed in, this search will be tracked by " + engine.name + ".", { bold: true, align: "left", type: "warning" });
+        }
         searchInput.focus();
     };
     var bangHandler = function () {
@@ -213,7 +221,7 @@ var main = (function () {
         toSave.visited = true;
         localStorage.setItem("morningData", JSON.stringify(toSave));
     };
-    
+
     return function () {
         timeElement = document.getElementById("time");
         dateElement = document.getElementById("date");
