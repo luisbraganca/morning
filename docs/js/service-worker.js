@@ -24,6 +24,9 @@ self.addEventListener('install', function (event) {
                 "/",
                 "/css/main.css",
                 "/js/main.js",
+                "/js/main-no-storage.js",
+                "js/register-service-worker.js",
+                "js/service-worker.js",
                 "img/bg/bg.png",
                 "img/ico/duckduckgo.png",
                 "img/ico/ebay.png",
@@ -36,7 +39,9 @@ self.addEventListener('install', function (event) {
                 "img/ico/steam.png",
                 "img/ico/torrentz.png",
                 "img/ico/wikipedia.png",
-                "img/ico/youtube.png"
+                "img/ico/youtube.png",
+                "img/logo.png",
+                "img/favicon.png"
             ];
             cache.addAll(urlsToCache);
             // Cached
