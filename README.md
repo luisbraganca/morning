@@ -14,8 +14,7 @@ No storage version: [https://luisbraganca.github.io/morning/nostorage]
 
 # Changes
 
-* Added bang support!
+* Added bang! support
 * Mini-tutorial (only shown the first time, storing the info on localStorage)
-* Added
 * Progressive Web App Support (simply add it to your smartphone and it works as if it was an APP, works offline)
 * Added a `no storage` version `nostorage.html` for users that are constantly clearing their browser data: it doesn't show the initial tutorial and the tracking alerts.
