@@ -3,6 +3,13 @@ INCOMPLETE: Start page with search engine, notes, most used and weather support
 Preview: [https://luisbraganca.github.io/morning/](https://luisbraganca.github.io/morning/)
 No storage version: [https://luisbraganca.github.io/morning/nostorage]
 
+# Recent Changes
+
+* Added bang! support
+* Mini-tutorial (only shown the first time, storing the info on localStorage)
+* Progressive Web App Support (simply add it to your smartphone and it works as if it was an APP, works offline)
+* Added a `no storage` version `nostorage.html` for users that are constantly clearing their browser data: it doesn't show the initial tutorial and the tracking alerts.
+
 # TODO
 
 * Notes
@@ -12,9 +19,6 @@ No storage version: [https://luisbraganca.github.io/morning/nostorage]
 * Allow direct-link to login pages (instead of home pages, which can be pretty useful)
 * It seems the background is a bit buggy on chrome for android, that needs to be fixed as well
 
-# Changes
+# Not going to be done
 
-* Added bang! support
-* Mini-tutorial (only shown the first time, storing the info on localStorage)
-* Progressive Web App Support (simply add it to your smartphone and it works as if it was an APP, works offline)
-* Added a `no storage` version `nostorage.html` for users that are constantly clearing their browser data: it doesn't show the initial tutorial and the tracking alerts.
+* Calendar (too much effort for a non-persistent functionality, if a user clears its browser data, the info is gone)
