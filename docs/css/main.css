@@ -4,11 +4,22 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     text-align: center;
-    background: url("../img/bg/bg.jpg") repeat center center fixed;
+    background-image: url('../img/bg/bg.jpg');
+    -webkit-background-image: url('../img/bg/bg.jpg');
+    -moz-background-image: url('../img/bg/bg.jpg');
+    -o-background-image: url('../img/bg/bg.jpg');
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-repeat: no-repeat;
+    -moz-background-repeat: no-repeat;
+    -o-background-repeat: no-repeat;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
 }
 
 #top-distance {
@@ -135,7 +146,7 @@ body {
 /* Toast */
 
 #toast {
-    z-index: 9999;
+    z-index: 999;
     opacity: 0;
     width: calc(100% - 40px);
     margin: 20px;
@@ -162,7 +173,6 @@ body {
 
 #toast.success {
     background-color: rgb(65, 129, 63);
-
 }
 
 #toast.error {
@@ -199,4 +209,93 @@ body {
 
 #toast.bold {
     font-weight: bold;
+}
+
+/* Favs modal */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 9999;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    /* Full width */
+    height: 90%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+
+.modal-closer {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-closer:hover, .modal-closer:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
 }

@@ -40,6 +40,7 @@
                 "/img/ico/wikipedia.png",
                 "/img/ico/youtube.png",
                 "/img/logo.png",
+                "/img/logo_192x192.png",
                 "/img/favicon.png",
                 "/index.html",
                 "/nostorage.html"
