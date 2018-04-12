@@ -4,11 +4,11 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     text-align: center;
-    background: url("../img/bg/bg.jpg") no-repeat center center fixed;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+    background: url("../img/bg/bg.jpg") repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #top-distance {
