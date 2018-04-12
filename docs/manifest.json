@@ -1,7 +1,7 @@
 {
     "short_name": "Morning",
     "name": "Morning Starter Page",
-"orientation": "landscape",
+"orientation": "portrait",
     "icons": [
         {
             "src": "img/favicon.png",
