@@ -1,6 +1,9 @@
+![Logo](https://raw.githubusercontent.com/luisbraganca/morning/master/public/favicon.png)
+
 # morning
 
 Powerful and customizable home page with weather, notes and search engines support.
+![Preview](https://raw.githubusercontent.com/luisbraganca/morning/master/screenshots/1.png)
 
 ## Demo
 
