@@ -3,7 +3,7 @@
 # morning
 
 Powerful and customizable home page with weather, notes and search engines support.
-![Preview](https://raw.githubusercontent.com/luisbraganca/morning/master/screenshots/1.png)
+![Preview](https://raw.githubusercontent.com/luisbraganca/morning/master/screenshots/animation.gif)
 
 ## Demo
 
