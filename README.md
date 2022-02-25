@@ -21,7 +21,7 @@ You can also toggle the search engines selector visibility by pressing `Ctrl Alt
 
 Simplified APP selector, toggle its visibility with `Ctrl Alt Down` or by clicking `menu`. You can save your favorite websites here.
 
-> **TIP:** Try using complete `URL`s, for example if you clear all cookies on exiting the browser, if may be useful to put the `URL`to the login pages. Or if you're constantly going to a section on a website, try using the `URL` that leads directly to that section.
+> **TIP:** Try using complete `URL`s, for example if you clear all cookies on exiting the browser, it may be useful to put the `URL`to the login pages. Or if you're constantly going to a section on a website, try using the `URL` that leads directly to that section.
 
 ### Notes
 
