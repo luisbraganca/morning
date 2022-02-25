@@ -4,6 +4,8 @@ Powerful and customizable home page with weather, notes and search engines suppo
 
 ## Demo
 
+[Check here](https://zealous-hopper-aed1ae.netlify.app)
+
 ## Features
 
 ### Power search
