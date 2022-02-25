@@ -1,6 +1,6 @@
 # morning
 
-Powered start page for your. Simply
+Powerful and customizable home page with weather, notes and search engines support.
 
 ## Demo
 
@@ -45,10 +45,10 @@ Once you open `morning`, it will try to ask your permission to access your locat
 
 1. [Install](#install)
 2. [Configure](#configure)
-   2.1 Weather
-   2.2 Background image
-   2.3 Search engines
-   2.4 Menu
+   1. Weather
+   2. Background image
+   3. Search engines
+   4. Menu
 3. [Build](#build)
 
 ### Install
@@ -154,6 +154,6 @@ Once again, you should add an image to the added entry. Put it under `public/img
 npm run build
 ```
 
-Host ONLY the `build` folder (it contains all the necessary files).
+Host ONLY the contents on the `build` folder (it contains all the necessary files).
 
 > **NOTE:** If you wish to host the website on a subfolder on your directory (for example, instead of `example.com`, you want to put it under `example.com/morning/`), you need o add `PUBLIC_URL='morning'` on your `.env` file.
